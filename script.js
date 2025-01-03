@@ -62,6 +62,11 @@ keys.forEach((key) => {
                 displayLower.textContent = multiplication(firstInput, secondInput);
             }
             else if (displayUpper.textContent.includes('÷')) {
+                if (secondInput === 0){
+                    displayUpper.textContent = "I miss her :(";
+                    displayLower.textContent = "Do better next time!!";
+                    return;
+                }
                 displayLower.textContent = division(firstInput, secondInput);
             }
             else if (displayUpper.textContent.includes('%')) {
@@ -89,6 +94,9 @@ keys.forEach((key) => {
         }
         else {
             if (outputBool && !key.classList.contains('operation')) {
+                if (displayUpper.textContent.includes("I miss her :(")){
+                    displayUpper.textContent = '';
+                }
                 displayLower.textContent = '';
                 outputBool = false;
             }
@@ -142,7 +150,7 @@ function multiplication(a, b) {
 
 function division(a, b) {
     if (b === 0){
-        return "I miss her";
+        return;
     }
     return a / b;
 }
