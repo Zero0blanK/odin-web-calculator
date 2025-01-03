@@ -80,12 +80,17 @@ section{
     padding: 7px 24px;
     background-color: #f0f0f0;
     color: white;
-    font-family: 'Work Sans', 'Arial';
+    font-family: fantasy ;
     font-size: 26px;
     font-weight: 500;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.key:hover {
+    transform: scale(0.9);
+    background-color: rgba(9, 36, 85, 0.41);
 }
 
 .key.long {
@@ -101,4 +106,8 @@ section{
 }
 .light-gray{
     background-color: #787878;
+}
+
+.light-green{
+    background-color: #58ef56;
 }
