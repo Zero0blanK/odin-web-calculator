@@ -141,6 +141,9 @@ function multiplication(a, b) {
 }
 
 function division(a, b) {
+    if (b === 0){
+        return "I miss her";
+    }
     return a / b;
 }
 
